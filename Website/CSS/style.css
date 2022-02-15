@@ -261,6 +261,8 @@ body {
     }
     .close-icon-menu {
         display: none;
+        flex: 0 0 30px;
+        height: 30px;
     }
     .close-icon-menu::before,
     .close-icon-menu::after {
@@ -270,10 +272,10 @@ body {
         transform-origin: 0 0;
     }
     .close-icon-menu::before {
-        transform: rotate(-37deg);
+        transform: rotate(-45deg);
     }
     .close-icon-menu::after {
-        transform: rotate(37deg);
+        transform: rotate(45deg);
     }
 }
 
