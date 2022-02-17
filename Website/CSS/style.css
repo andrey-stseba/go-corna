@@ -302,8 +302,6 @@ body {
 
 /* --------------------block-text-main---------------------------- */
 
-.block-text {}
-
 .block-text__title {
     font-weight: 700;
     font-size: 44px;
@@ -475,7 +473,6 @@ body {
     flex: 0 1 50%;
 }
 
-.stay-safe__block-text {}
 
 .media-stay-safe {
     width: 373px;
@@ -571,9 +568,6 @@ body {
     padding-bottom: 116px;
 }
 
-.experts__container {}
-
-.experts__staistics {}
 
 .experts__block-text {
     max-width: 400px;
@@ -752,28 +746,48 @@ body {
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
     border-radius: 8px;
     padding: 37px 18px;
-    /* position: relative; */
     z-index: 3;
 }
 
-.healthcare__card__decor {
+.healthcare__card__decor,.healthcare__card__decor::before {
     content: "";
     position: absolute;
     background: #EC5863;
     border-radius: 16px;
-}
+    }
 
 .healthcare__card__decor1 {
     width: 65.75px;
     height: 65.75px;
     left: 22.47px;
-    bottom: 10px;
+    bottom: 5px;
     transform: rotate(-30deg);
 }
 
-.healthcare__card__decor::before {
+.healthcare__card__decor1::before {
+    border-radius: 30px;
+    width: 96.96px;
+    height: 96.96px;
+    right: -335.57px;
+    top: -40px;
+    transform: rotate(135deg);
+}
+
+.healthcare__card__decor2 {
+    width: 127.47px;
+    height: 127.47px;
+    left: 610.24px;
+    bottom: 9.75px;
+    transform: rotate(-30deg);
     border-radius: 30px;
 }
+.healthcare__card__decor3 {
+    width: 65.75px;
+    height: 65.75px;
+    right: 30.93px;
+    top: 0.46px;
+    transform: rotate(-30deg);
+   }
 
 .healthcare__card_image {
     height: 72px;
@@ -794,22 +808,40 @@ body {
     letter-spacing: 0.08em;
 }
 
+@media (max-width:991.98px) {
+    .healthcare__cards {
+        flex-direction: column;
+        padding: 38px 25px;
+        
+    }
+    .healthcare__card {
+        padding: 27px 10px;
+    }
+    .healthcare__card__decor,.healthcare__card__decor::before {
+        width: 0;
+        height: 0;
+    }
+}
 
 /* --------------------------------footer------------------------- */
-
-.footer {}
-
-.footer__container {}
-
 .footer-items {
     display: flex;
     justify-content: center;
     column-gap: 57px;
-    row-gap: 20px;
+    row-gap: 40px;
     align-items: center;
     padding: 30px 350px;
 }
+@media (max-width:767.98px){
+    .footer-items {
+        padding: 30px 50px;
+    }
+}
 
-.footer-item {}
+@media (max-width:479.98px) {
+    .footer-items {
+        flex-direction: column;
+    }
+    
+}
 
-.footer-item-icon {}
