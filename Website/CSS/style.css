@@ -828,7 +828,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 57px;
-    row-gap: 40px;
+    row-gap: 20px;
     align-items: center;
     padding: 30px 350px;
 }
